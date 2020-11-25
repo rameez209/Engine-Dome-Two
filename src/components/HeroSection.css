@@ -1,0 +1,141 @@
+.home__hero-section {
+    color: black;
+    padding: 130px 0;
+}
+.home__hero-row{
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    margin-right: -15px;
+    margin-bottom: -15px;
+    margin-left: -15px;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+.col {
+    margin-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 1;
+    max-width: 50%;
+    flex-basis: 50%;
+}
+
+.home__hero-text-wrapper {
+    max-width: 540px;
+    padding-top: 0;
+    padding-bottom: 60px;
+}
+
+.top-line {
+    color: black;
+    font-size: 16px;
+    font-weight: 700; 
+    letter-spacing: 1.4px;
+    text-transform: uppercase;  
+    margin-bottom: 16px;
+}
+
+.heading {
+    margin-bottom: 24px;
+    font-size: 38px;
+    line-height: 1.1;
+    font-weight: 600;
+    color: #596bb2;
+}
+
+.dark {
+    color: #1c2237;
+}
+.darkBg {
+    /* background-color: #1c2237; */
+    /* background-color: whitesmoke; */
+    background-color: white;
+}
+.home__hero-subtitle {
+    max-width: 440px;
+    margin-bottom: 35px;
+    font-size: 18px;
+    line-height: 24px;
+}
+.home__hero-img-wrapper {
+    max-width: 555px;
+    /* padding-right: 0;
+    margin: 0 0 0 10px; */
+}
+
+
+img {
+    border: 0;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+
+/* STACKING IMAGES ON TOP OF EACHOTHER */
+.home__hero-img-wrapper{
+    position: relative;
+}
+
+.home__hero-img{
+    position:relative;
+    width: 100%;
+    box-shadow: 3px 4px 5px black;
+    max-width: 95%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 10px;
+    /* margin: 0 0 0 10px; */
+    padding-right: 0;
+}
+
+.home__heroTwo-img {
+    position: absolute;
+    top: 33%;
+    left: 60%;
+    width: 35%;
+    box-shadow: 2px 3px 4px black;
+    max-width: 95%;
+    padding-right: 0;
+    margin: 0 0 0 10px;
+    
+}
+.home__heroThree-img{
+    position:absolute;
+    box-shadow: 1px 2px 3px black;
+    width: 20%;
+    top: 50%;
+    left: 30%;
+    max-width: 95%;
+    padding-right: 0;
+    margin: 0 0 0 10px;
+}
+
+
+@media screen and (max-width: 991px) {
+    .container {
+        padding-right: 30px;
+        padding-left: 30px !important;
+
+    }
+}
+@media screen and (max-width: 768px) {
+    .home__hero-row{
+        display: flex;
+        flex-direction: column !important;
+        
+    }
+    .home__hero-text-wrapper {
+        padding-bottom: 65px;
+        /* flex-direction: row; */
+    }
+    .col {
+        max-width: 100%;
+        flex-basis: 100%;
+        /* flex-direction: row-reverse; */
+        
+      }
+}

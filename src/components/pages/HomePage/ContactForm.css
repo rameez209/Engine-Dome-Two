@@ -1,0 +1,22 @@
+.form-page{
+    margin: 0;
+    box-sizing: border-box;
+    background: whitesmoke;
+}
+
+.icon-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    flex-direction: row-reverse;
+}
+
+.map-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    flex-direction: row-reverse;
+}
